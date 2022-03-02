@@ -4,11 +4,11 @@
 
 export const environment = {
   production: false,
-  s3_region: 'eu-central-1',
-  s3_domain: '//angularpluss3.s3.eu-central-1.amazonaws.com/',
-  s3_access_key_id: 'AKIAXDTBUJTVDPMCASMO',
-  s3_secret_access_key: '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',
-  cloud_image_token: 'afxpjqnfrq',
+  s3_region: '',
+  s3_domain: '',
+  s3_access_key_id: '',
+  s3_secret_access_key: '',
+  cloud_image_token: '',
 };
 
 /*

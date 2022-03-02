@@ -9,7 +9,7 @@ import {ManagedUpload} from 'aws-sdk/clients/s3';
 export class UploadService {
 
   private bucket: S3;
-  private defaults = {Bucket: 'angularpluss3', ACL: 'public-read'}
+  private defaults = {Bucket: 'images-volocub', ACL: 'public-read'}
 
   constructor() {
     this.bucket = new S3({

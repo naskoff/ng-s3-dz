@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-12">
+    <ngx-dropzone (change)="onSelect($event)">
+      <ngx-dropzone-label>Drop it, baby!</ngx-dropzone-label>
+      <ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+        <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+      </ngx-dropzone-preview>
+    </ngx-dropzone>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-6 col-sm-4 col-md-3 col-xl-2" *ngFor="let image of images">
+    <div class="img-thumbnail">
+      <ci-img [src]="image.key"></ci-img>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-6 col-sm-4 col-md-3 col-xl-2" *ngFor="let image of images">
+    <div class="img-thumbnail">
+      <img [src]="'//afxpjqnfrq.cloudimg.io/' + image.location + '?width=300'"
+           class="img-fluid"
+           alt="{{image.key}}"/>
+    </div>
+  </div>
+</div>
